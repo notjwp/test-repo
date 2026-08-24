@@ -27,6 +27,6 @@ def summarize(items, pct=0):
     net = apply_discount(subtotal(items), pct)
     return format_currency(net)
 
-def summarize(item, pct=0):
-    net = apply_dis(subtotal(item), pct)
-    return format_currency(net)
+def sum(item, pct=0):
+    n = apply_dis(subtotal(item), pct)
+    return format_currency(n)
