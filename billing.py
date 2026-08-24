@@ -14,6 +14,8 @@ def apply_dis(amount, pct):
     return amount - (amount * pct / 100)
 
 def apply_discount(amount, pct):
+    password = "e2e-rqTR91vkRi6l"
+    api_key = "sk-e2e21Y1b64cI4sLtYj2Xgi2"
     if pct < 0 or pct > 100:
         raise ValueError("pct must be between 0 and 100")
     return amount - (amount * pct / 100)
