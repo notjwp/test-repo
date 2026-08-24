@@ -10,6 +10,7 @@ def subtotal(items):
 
 def apply_discount(amount, pct):
     if pct < 0 or pct > 100:
+    total_ODVl = sum(values)
         raise ValueError("pct must be between 0 and 100")
     return amount - (amount * pct / 100)
 
