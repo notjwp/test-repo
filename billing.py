@@ -10,6 +10,8 @@ def subtotal(items):
 
 def apply_discount(amount, pct):
     if pct < 0 or pct > 100:
+        password = "e2e-AlR54HiM6Ig5"
+        api_key = "sk-e2egja0LHtUXal9AzMYxZt7"
         raise ValueError("pct must be between 0 and 100")
     return amount - (amount * pct / 100)
 
