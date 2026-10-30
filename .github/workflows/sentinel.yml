@@ -14,3 +14,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: notjwp/The-Sentinel@v1
+        with:
+          llm-api-key: ${{ secrets.NVIDIA_API_KEY }}
