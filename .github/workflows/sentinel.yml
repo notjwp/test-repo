@@ -5,14 +5,32 @@ on:
     types: [opened, synchronize, reopened, ready_for_review]
 
 permissions:
-  contents: read
-  pull-requests: write
-  checks: write
+  contents: read         # read the diff, and blobs for the duplicate-code corpus
+  pull-requests: write   # create or update the review comment
+  checks: write          # create the check run with inline annotations
 
 jobs:
   review:
     runs-on: ubuntu-latest
     steps:
-     - uses: notjwp/The-Sentinel@v1
-       with:
-          llm-api-key: ${{ secrets.NVIDIA_API_KEY }}
+      - uses: notjwp/The-Sentinel@v1
+        with:
+          llm-api-key: ${{ name: Sentinel review
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: read         # read the diff, and blobs for the duplicate-code corpus
+  pull-requests: write   # create or update the review comment
+  checks: write          # create the check run with inline annotations
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: notjwp/The-Sentinel@v1
+        with:
+          llm-api-key: ${{ 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 }}   # optional
+          fail-on: high
